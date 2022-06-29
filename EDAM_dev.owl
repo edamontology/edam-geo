@@ -53217,7 +53217,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0092 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0092">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasBroadSynonym>Computer graphics</oboInOwl:hasBroadSynonym>
@@ -54520,8 +54520,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0218 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0218">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3068"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <oboInOwl:hasDefinition>The processing and analysis of natural language, such as scientific literature in English, in order to extract data and information, or to enable human-computer interaction.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>NLP</oboInOwl:hasExactSynonym>
@@ -54750,22 +54750,34 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_0605">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <edamontology:created_in>1.3</edamontology:created_in>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDbXref>VT 1.2 Computer sciences</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VT 1.2.99 Other</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.3 Information sciences</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.3.3 Information retrieval</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.3.4 Information management</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.3.5 Knowledge management</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.3.99 Other</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study and practice of information processing and use of computer information systems.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The theory and practical use of computer systems.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Information management</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Information science</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Knowledge management</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Computer_science</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasHumanReadableId>Informatics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Cloud computing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>HPC</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>High performance computing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>High-performance computing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Informatics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computer_science"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Informatics"/>
+        <skos:altLabel>Computer science</skos:altLabel>
     </owl:Class>
     
 
@@ -56250,17 +56262,24 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_2258">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
+        <edamontology:created_in>1.3</edamontology:created_in>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDbXref>VT 1.7.4 Computational chemistry</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The application of information technology to chemistry in biological research environment.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Topic concerning the development and application of theory, analytical methods, mathematical models and computational simulation of chemical systems.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Chemical informatics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Chemoinformatics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Cheminformatics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasHumanReadableId>Computational_chemistry</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Cheminformatics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cheminformatics"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_chemistry"/>
+        <skos:altLabel>Computational chemistry</skos:altLabel>
     </owl:Class>
     
 
@@ -57347,7 +57366,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3068 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3068">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_040"/>
         <edamontology:created_in>beta13</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The scientific literature, language processing, reference information, and documentation.</oboInOwl:hasDefinition>
@@ -58155,7 +58174,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Medicine</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health and medicine</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Medicine"/>
     </owl:Class>
     
@@ -58301,28 +58320,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     
 
 
-    <!-- http://edamontology.org/topic_3316 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_3316">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
-        <edamontology:created_in>1.3</edamontology:created_in>
-        <oboInOwl:hasDbXref>VT 1.2 Computer sciences</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>VT 1.2.99 Other</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>The theory and practical use of computer systems.</oboInOwl:hasDefinition>
-        <oboInOwl:hasHumanReadableId>Computer_science</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym>Cloud computing</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>HPC</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>High performance computing</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>High-performance computing</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Computer science</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computer_science"/>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/topic_3318 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3318">
@@ -58446,25 +58443,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Rare diseases</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rare_disease"/>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/topic_3332 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_3332">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
-        <edamontology:created_in>1.3</edamontology:created_in>
-        <edamontology:isdebtag>true</edamontology:isdebtag>
-        <oboInOwl:hasDbXref>VT 1.7.4 Computational chemistry</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>Topic concerning the development and application of theory, analytical methods, mathematical models and computational simulation of chemical systems.</oboInOwl:hasDefinition>
-        <oboInOwl:hasHumanReadableId>Computational_chemistry</oboInOwl:hasHumanReadableId>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Computational chemistry</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_chemistry"/>
     </owl:Class>
     
 
@@ -58849,7 +58827,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3372 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3372">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <edamontology:created_in>1.4</edamontology:created_in>
         <oboInOwl:hasDbXref>1.2.12 Programming languages</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Software engineering</oboInOwl:hasDbXref>
@@ -59840,7 +59818,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3473 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3473">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <edamontology:created_in>1.7</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasBroadSynonym>KDD</oboInOwl:hasBroadSynonym>
@@ -59860,7 +59838,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3474 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3474">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <edamontology:created_in>1.7</edamontology:created_in>
         <oboInOwl:hasBroadSynonym>Artificial Intelligence</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.2.2 Artificial Intelligence (expert systems, machine learning, robotics)</oboInOwl:hasDbXref>
@@ -60769,7 +60747,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3678 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3678">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3344"/>
         <edamontology:created_in>1.12</edamontology:created_in>
         <edamontology:documentation rdf:resource="https://en.wikipedia.org/wiki/Design_of_experiments"/>
         <edamontology:isdebtag>true</edamontology:isdebtag>
@@ -61462,6 +61440,17 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetCDF Zarr</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetCDF-like Zarr data model</oboInOwl:hasExactSynonym>
         <rdfs:label>NCZarr</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_003 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_003">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3305"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-29T16:49:44.827249Z</oboInOwl:creation_date>
+        <rdfs:label>Global health</rdfs:label>
     </owl:Class>
     
 
