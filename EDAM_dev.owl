@@ -11,6 +11,7 @@
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="http://edamontology.org">
@@ -608,6 +609,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#savedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#savedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
     
 
 
@@ -2880,7 +2887,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3307"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0091"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
@@ -52946,7 +52953,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0077 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0077">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The processing and analysis of nucleic acid sequence, structural and other data.</oboInOwl:hasDefinition>
@@ -52968,7 +52975,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0078 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0078">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>Archival, processing and analysis of protein data, typically molecular sequence and structural data.</oboInOwl:hasDefinition>
@@ -53004,7 +53011,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0080 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0080">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The archival, processing and analysis of molecular sequences (monomer composition of polymers) including molecular sequence data resources, sequence sites, alignments, motifs and profiles.</oboInOwl:hasDefinition>
@@ -53025,7 +53032,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0081 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0081">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The curation, processing, analysis and prediction of data about the structure of biological molecules, typically proteins and nucleic acids and other macromolecules.</oboInOwl:hasDefinition>
@@ -53093,8 +53100,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0084 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0084">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3299"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The study of evolutionary relationships amongst organisms.</oboInOwl:hasDefinition>
@@ -53178,18 +53185,31 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_0091">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
+        <edamontology:created_in>1.3</edamontology:created_in>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDbXref>VT 1.5.12 Computational biology</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VT 1.5.19 Mathematical biology</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VT 1.5.26 Theoretical biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.6 Bioinformatics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The archival, curation, processing and analysis of complex biological data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The development and application of theory, analytical methods, mathematical models and computational simulation of biological systems.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Bioinformatics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasHumanReadableId>Computational_biology</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Biomathematics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Mathematical biology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Theoretical biology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes data  processing in general, including basic handling of files and databases, datatypes, workflows and annotation.</rdfs:comment>
+        <rdfs:comment>This includes the modeling and treatment of biological processes and systems in mathematical terms (theoretical biology).</rdfs:comment>
         <rdfs:label>Bioinformatics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Bioinformatics"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_biology"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D016247</rdfs:seeAlso>
+        <skos:altLabel>Computational biology</skos:altLabel>
     </owl:Class>
     
 
@@ -53895,7 +53915,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0160 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0160">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The archival, detection, prediction and analysis of positional features such as functional and other key sites, in molecular sequences and the conserved patterns (motifs, profiles etc.) that may be used to describe them.</oboInOwl:hasDefinition>
@@ -54694,7 +54714,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0602 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0602">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasAlternativeId>http://edamontology.org/topic_3076</oboInOwl:hasAlternativeId>
@@ -55646,7 +55666,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:obsolete_since>1.3</edamontology:obsolete_since>
         <edamontology:oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_3307"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0091"/>
         <oboInOwl:hasDefinition>Theoretical biology</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Theoretical biology</rdfs:label>
@@ -56092,7 +56112,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_1775 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_1775">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The study of gene and protein function including the prediction of functional properties of a protein.</oboInOwl:hasDefinition>
@@ -58204,30 +58224,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     
 
 
-    <!-- http://edamontology.org/topic_3307 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_3307">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
-        <edamontology:created_in>1.3</edamontology:created_in>
-        <edamontology:isdebtag>true</edamontology:isdebtag>
-        <oboInOwl:hasDbXref>VT 1.5.12 Computational biology</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>VT 1.5.19 Mathematical biology</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>VT 1.5.26 Theoretical biology</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>The development and application of theory, analytical methods, mathematical models and computational simulation of biological systems.</oboInOwl:hasDefinition>
-        <oboInOwl:hasHumanReadableId>Computational_biology</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym>Biomathematics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Mathematical biology</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Theoretical biology</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:comment>This includes the modeling and treatment of biological processes and systems in mathematical terms (theoretical biology).</rdfs:comment>
-        <rdfs:label>Computational biology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_biology"/>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/topic_3308 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3308">
@@ -58368,8 +58364,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3321 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3321">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <edamontology:created_in>1.3</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The structure and function of genes at a molecular level.</oboInOwl:hasDefinition>
@@ -60921,7 +60917,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3855">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
         <edamontology:created_in>1.21</edamontology:created_in>
         <edamontology:related_term>Environment</edamontology:related_term>
         <oboInOwl:hasDefinition>Study of the environment, the interactions between its physical, chemical, and biological components and it&apos;s effect on life.  Also how humans impact upon the environment, and how we can manage and utilise natural resources.</oboInOwl:hasDefinition>
@@ -60937,7 +60932,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3892 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3892">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <edamontology:created_in>1.22</edamontology:created_in>
         <oboInOwl:hasDefinition>The study and simulation of molecular conformations using a computational model and computer simulations.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -61434,7 +61429,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_4019">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
         <edamontology:created_in>1.26</edamontology:created_in>
         <oboInOwl:hasDefinition>Biosciences, or life sciences, include fields of study related to life, living beings, and biomolecules.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Life sciences</oboInOwl:hasExactSynonym>
@@ -61475,30 +61469,9 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     
 
 
-    <!-- http://edamontology.org/topic_webprotege_003 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_003">
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-05T21:36:53.481325Z</oboInOwl:creation_date>
-        <rdfs:label>Topic-test1</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/topic_webprotege_004 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_004">
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-05T21:37:11.1219Z</oboInOwl:creation_date>
-        <rdfs:label>Topic-test2</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/topic_webprotege_005 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_005">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do we need this at all? If not, where to include it as a broad synonym to make sense? Or just fully skip as too high-level, just like Natural sciences?
 Wikipedia defines Physical sciences as non-living natural sciences, although environmental, biophys, biochem, astrobio belong there....</rdfs:comment>
         <rdfs:label>Physical sciences</rdfs:label>
