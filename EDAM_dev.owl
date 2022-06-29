@@ -58248,7 +58248,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3314">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_005"/>
         <edamontology:created_in>1.3</edamontology:created_in>
         <oboInOwl:hasBroadSynonym>Chemical science</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Polymer science</oboInOwl:hasBroadSynonym>
@@ -58328,7 +58327,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3318">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_005"/>
         <edamontology:created_in>1.3</edamontology:created_in>
         <oboInOwl:hasDefinition>The study of matter, space and time, and related concepts such as energy and force.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Physics</oboInOwl:hasHumanReadableId>
@@ -61444,7 +61442,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_001">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_005"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_009"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planetary sciences</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earth sciences</oboInOwl:hasExactSynonym>
@@ -61465,17 +61462,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetCDF Zarr</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetCDF-like Zarr data model</oboInOwl:hasExactSynonym>
         <rdfs:label>NCZarr</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/topic_webprotege_005 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_005">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do we need this at all? If not, where to include it as a broad synonym to make sense? Or just fully skip as too high-level, just like Natural sciences?
-Wikipedia defines Physical sciences as non-living natural sciences, although environmental, biophys, biochem, astrobio belong there....</rdfs:comment>
-        <rdfs:label>Physical sciences</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Outline_of_physical_science"/>
     </owl:Class>
     
 
@@ -61521,7 +61507,6 @@ Wikipedia defines Physical sciences as non-living natural sciences, although env
 
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_009">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_005"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astrosciences</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space sciences</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space sciences: https://en.wikipedia.org/wiki/Outline_of_space_science doesn&apos;t add much useful to Astronomy (pretty-much other than Rocket science🚀🤘🏽👾). However, https://en.wikipedia.org/wiki/Outline_of_academic_disciplines#Space_science has various topics as &quot;siblings&quot; of Astronomy (incl. Planetary science and Astrobiology).</rdfs:comment>
