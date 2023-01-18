@@ -1019,6 +1019,16 @@
     
 
 
+    <!-- http://edamontology.org/topic_webprotege_081 -->
+
+    <owl:ObjectProperty rdf:about="http://edamontology.org/topic_webprotege_081">
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-22T18:56:11.224295Z</oboInOwl:creation_date>
+        <rdfs:label>skos:related</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -11750,12 +11760,14 @@
     <!-- http://edamontology.org/data_1689 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_1689">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2099"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2101"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <oboInOwl:hasDefinition>A username on a computer system.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Synonym of User ID?</rdfs:comment>
         <rdfs:label>Username</rdfs:label>
     </owl:Class>
     
@@ -11770,6 +11782,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Not a user ID. Needed at all?</rdfs:comment>
         <rdfs:label>Password</rdfs:label>
     </owl:Class>
     
@@ -11778,7 +11791,7 @@
     <!-- http://edamontology.org/data_1691 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_1691">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2101"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2118"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <oboInOwl:hasDbXref>Moby:Email</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Moby:EmailAddress</oboInOwl:hasDbXref>
@@ -11794,6 +11807,7 @@
     <!-- http://edamontology.org/data_1692 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_1692">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2099"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2118"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <oboInOwl:hasDefinition>The name of a person.</oboInOwl:hasDefinition>
@@ -16026,6 +16040,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Check where and why this would be used/useful?</rdfs:comment>
         <rdfs:label>OBO file format name</rdfs:label>
     </owl:Class>
     
@@ -25229,6 +25244,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_006"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planetary spatial coordinate</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geolocation coordinate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spherical coordinate</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Geospatial coordinate</rdfs:label>
     </owl:Class>
     
@@ -25249,6 +25265,10 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_webprotege_007">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_006"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporal coordinate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporal reference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stamp</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Timestamp</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Time</rdfs:label>
     </owl:Class>
     
@@ -25258,6 +25278,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_webprotege_008">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_005"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_047"/>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Northing?</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Latitude</rdfs:label>
     </owl:Class>
@@ -25268,6 +25289,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_webprotege_009">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_005"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_047"/>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Easting?</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Longitude</rdfs:label>
     </owl:Class>
@@ -25551,12 +25573,214 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_webprotege_032">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_webprotege_057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-06T09:10:22.565363Z</oboInOwl:creation_date>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land use map</oboInOwl:hasNarrowSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Land use&apos; refers to how people utilise land, whereas &apos;land cover&apos; is general.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Could this also be just a topic or two? Or better with both topic and data? See the proposed topic &apos;Land use&apos;.</rdfs:comment>
         <rdfs:label>Land cover map</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Land_cover"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Land_cover_mapping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_033 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_033">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3707"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-15T12:06:30.205275Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taxon occurrence data</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasNarrowSynonym>Species occurrence data</oboInOwl:hasNarrowSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO. What about other occurence data than organisms? And observation(al) data in general?</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism occurence data?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_034 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_034">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3305"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-15T12:08:07.242935Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public health surveillance data</oboInOwl:hasExactSynonym>
+        <rdfs:label>Health surveillance data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_035 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_035">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-04T10:14:31.831524Z</oboInOwl:creation_date>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audio recording</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Field recording</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sound recording</oboInOwl:hasNarrowSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Needs some thinking about label(s), links, and eventual granularity. Not necessarily only recording, can also be a generated or processed sound.</rdfs:comment>
+        <rdfs:label>Audio</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Field_recording"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sound_recording_and_reproduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_036 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_036">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1881"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:34:33.388366Z</oboInOwl:creation_date>
+        <rdfs:label>ORCiD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_037 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_037">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2118"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:34:46.89532Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO, GENERAL ISSUE, SIMILAR FOR GENERAL FORMATS: Is not a subclass of a Person identifier, but needs to be visible as an option for identifying a person, somehow!!!!</rdfs:comment>
+        <rdfs:label>WikiData ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_038 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_038">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3358"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_042"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:38:44.207832Z</oboInOwl:creation_date>
+        <rdfs:label>EDAM format ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_039 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_039">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3358"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:38:58.866414Z</oboInOwl:creation_date>
+        <rdfs:label>IANA media type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_040 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_040">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3358"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:39:12.00322Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the worst eventual format identifier.</rdfs:comment>
+        <rdfs:label>File extension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_041 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_041">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2129"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2339"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:40:50.62826Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EDAM format primary label</oboInOwl:hasExactSynonym>
+        <rdfs:label>EDAM format name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_042 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_042">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1087"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:42:51.290902Z</oboInOwl:creation_date>
+        <rdfs:label>EDAM concept ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_043 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_043">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_042"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:44:36.669912Z</oboInOwl:creation_date>
+        <rdfs:label>EDAM topic ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_044 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_044">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_042"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:44:46.515546Z</oboInOwl:creation_date>
+        <rdfs:label>EDAM operation ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_045 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_045">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_042"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T12:44:58.453001Z</oboInOwl:creation_date>
+        <rdfs:label>EDAM data ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_046 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_046">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_016"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-12-08T15:28:59.925647Z</oboInOwl:creation_date>
+        <rdfs:label>Astronomical coordinate system</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Astronomical_coordinate_systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_webprotege_047 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_webprotege_047">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_webprotege_006"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-12-08T15:29:22.978705Z</oboInOwl:creation_date>
+        <rdfs:label>Astronomical coordinate</rdfs:label>
     </owl:Class>
     
 
@@ -29012,10 +29236,12 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2551"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <edamontology:documentation rdf:resource="https://www.ncbi.nlm.nih.gov/data_specs/asn/"/>
+        <oboInOwl:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For sequences, alignments (Seqalign used by BLAST), literature, also BLAST XML &amp; XML2. Can be serialised in text, binary, XML, JSON</oboInOwl:comment>
         <oboInOwl:hasDefinition>NCBI ASN.1-based sequence format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:label>ASN.1 sequence format</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI ASN.1 format (textual)</rdfs:label>
     </owl:Class>
     
 
@@ -33119,8 +33345,10 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3331">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1966"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <edamontology:created_in>1.3</edamontology:created_in>
+        <edamontology:documentation rdf:resource="http://www.ncbi.nlm.nih.gov/data_specs/schema/NCBI_BlastOutput.mod.xsd"/>
         <oboInOwl:hasDefinition>XML format as produced by the NCBI Blast package</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
@@ -34471,6 +34699,12 @@
     <owl:Class rdf:about="http://edamontology.org/format_3682">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/operation_webprotege_015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <edamontology:citation rdf:resource="http://doi.org/10.1016/j.jprot.2012.07.026"/>
         <edamontology:created_in>1.13</edamontology:created_in>
         <edamontology:documentation rdf:resource="http://www.imzml.org/index.php?option=com_content&amp;view=article&amp;id=188&amp;Itemid=63"/>
@@ -35022,6 +35256,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/format_3748">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3617"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <edamontology:citation rdf:resource="http://doi.org/10.4018/jswis.2009081901"/>
         <edamontology:citation rdf:resource="https://www.w3.org/DesignIssues/LinkedData.html"/>
         <edamontology:created_in>1.15</edamontology:created_in>
@@ -35870,13 +36110,21 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3822">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3617"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3748"/>
         <edamontology:created_in>1.20</edamontology:created_in>
         <edamontology:documentation rdf:resource="https://gephi.org/users/supported-graph-formats/gml-format/"/>
-        <oboInOwl:hasDefinition>GML (Graph Modeling Language) is a text file format supporting network data with a very easy syntax. It is used by Graphlet, Pajek, yEd, LEDA and NetworkX.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>GML format</oboInOwl:hasExactSynonym>
+        <edamontology:file_extension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gml</edamontology:file_extension>
+        <edamontology:media_type rdf:resource="https://www.iana.org/assignments/media-types/text/vnd.gml"/>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Modelling Language (GML) is a structured, hierarchical textual format for defining graphs with labelled nodes and edges, optionally directed. TODO: is it extensible by any attributes? Or just comments? What are the extra fields, and is there any specification?</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Meta Language</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:label>GML</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Modelling Language can be used as a format for diverse graph-like data, such as for example biological networks (including pathways), or semantic knowledge graphs (including linked data).</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not to be confused with the Geography Markup Language (also GML, with the same file extension), or with GraphML.</rdfs:comment>
+        <rdfs:label xml:lang="en-us">GML (Graph Modeling Language)</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GML (Graph Modelling Language)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Graph_Modelling_Language"/>
     </owl:Class>
     
 
@@ -36087,10 +36335,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/format_3836">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1966"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <edamontology:created_in>1.20</edamontology:created_in>
-        <edamontology:documentation>ftp://ftp.ncbi.nlm.nih.gov/blast/documents/NEWXML/ProposedBLASTXMLChanges.pdf</edamontology:documentation>
-        <edamontology:documentation>ftp://ftp.ncbi.nlm.nih.gov/blast/documents/NEWXML/xml2.pdf</edamontology:documentation>
         <edamontology:documentation>http://www.ncbi.nlm.nih.gov/data_specs/schema/NCBI_BlastOutput2.mod.xsd</edamontology:documentation>
         <oboInOwl:hasDefinition>XML format as produced by the NCBI Blast package v2.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36121,6 +36368,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3839">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/operation_webprotege_015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <edamontology:citation rdf:resource="http://doi.org/10.1016/j.jprot.2012.07.026"/>
         <edamontology:created_in>1.20</edamontology:created_in>
         <edamontology:documentation rdf:resource="http://www.imzml.org/index.php?option=com_content&amp;view=article&amp;id=188&amp;Itemid=63"/>
@@ -36932,8 +37185,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <edamontology:created_in>1.23</edamontology:created_in>
+        <edamontology:documentation rdf:resource="https://zarr.readthedocs.io"/>
         <edamontology:documentation rdf:resource="https://pangeo.io/data.html"/>
-        <edamontology:documentation rdf:resource="https://zarr.readthedocs.io/en/stable/spec.html"/>
+        <edamontology:example rdf:resource="https://zarr.readthedocs.io/en/stable/spec/v1.html#example"/>
         <edamontology:example rdf:resource="https://zarr.readthedocs.io/en/stable/spec/v2.html#examples"/>
         <edamontology:file_extension>zarray</edamontology:file_extension>
         <edamontology:file_extension>zgroup</edamontology:file_extension>
@@ -37879,6 +38133,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_webprotege_007">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3650"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_webprotege_002"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_webprotege_031"/>
         <edamontology:information_standard rdf:resource="https://cfconventions.org"/>
         <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Climate and forecast (CF) metadata conventions</edamontology:related_term>
         <oboInOwl:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From version-4 NetCDF is based on HDF5</oboInOwl:comment>
@@ -37894,9 +38149,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/format_webprotege_008 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_webprotege_008">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_webprotege_003"/>
+        <edamontology:file_extension rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gml</edamontology:file_extension>
+        <edamontology:media_type rdf:resource="https://www.iana.org/assignments/media-types/application/gml+xml"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-26T11:59:54.522374Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not to be confused with the Graph Modelling Language (also GML, with the same file extension).</rdfs:comment>
         <rdfs:label>GML (Geography Markup Language)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Geography_Markup_Language"/>
     </owl:Class>
@@ -38113,6 +38372,151 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a conglomerate format with raw data in HDF5 and metadata in XML.</rdfs:comment>
         <rdfs:label>XDMF</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/XDMF"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_022 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_022">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1966"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-15T15:14:17.964551Z</oboInOwl:creation_date>
+        <rdfs:label>BLAST XML2 JSON</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_023 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_023">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1966"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-15T15:15:02.913432Z</oboInOwl:creation_date>
+        <rdfs:label>NCBI Seqalign binary ASN.1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_024 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_024">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1966"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-15T15:15:13.687141Z</oboInOwl:creation_date>
+        <rdfs:label>NCBI Seqalign textual ASN.1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_025 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_025">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1966"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-15T15:15:23.798686Z</oboInOwl:creation_date>
+        <rdfs:label>NCBI Seqalign JSON</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_026 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_026">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3752"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-15T15:19:27.69788Z</oboInOwl:creation_date>
+        <rdfs:label>Tabular BLAST format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_027 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_027">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T16:16:10.569938Z</oboInOwl:creation_date>
+        <rdfs:label>NCBI ASN.1 format (binary)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_028 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_028">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T16:16:34.675362Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Check how much these are used (other than BLAST XML and XML2), and whether documented anywhere. Consider omitting from EDAM.</rdfs:comment>
+        <rdfs:label>NCBI ASN.1 format (XML)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_029 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_029">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T16:17:07.783923Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Check how much these are used (other than BLAST XML2 in JSON), and whether documented anywhere. Consider omitting from EDAM.</rdfs:comment>
+        <rdfs:label>NCBI ASN.1 format (JSON)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_030 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_030">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3650"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3706"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-04T10:27:08.974122Z</oboInOwl:creation_date>
+        <rdfs:label>NetCDF-EBV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_031 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_031">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-04T10:30:24.047835Z</oboInOwl:creation_date>
+        <rdfs:label>Climate and weather data format?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_032 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_032">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3617"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T13:13:39.666537Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Finish this, and fill in remaning relevant formats from the bottom of https://en.wikipedia.org/wiki/GraphML</rdfs:comment>
+        <rdfs:label>GraphML</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/GraphML"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_webprotege_033 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_webprotege_033">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3915"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-12-07T16:23:45.962537Z</oboInOwl:creation_date>
+        <rdfs:label>OME-Zarr?</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://docs.openmicroscopy.org/ome-model/6.0.0/index.html"/>
     </owl:Class>
     
 
@@ -40623,8 +41027,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This includes methods to render and visualise molecules.</rdfs:comment>
-        <rdfs:label>Visualisation</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data? visualisation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biological_data_visualization"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_and_information_visualization"/>
     </owl:Class>
     
 
@@ -48327,7 +48732,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This excludes non-analytical methods that read and write the same basic type of data (for that, see &apos;Data handling&apos;).</rdfs:comment>
-        <rdfs:label>Analysis</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data analysis</rdfs:label>
     </owl:Class>
     
 
@@ -49409,6 +49814,18 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <edamontology:created_in>1.1</edamontology:created_in>
         <oboInOwl:hasDefinition>Analyse one or more spectra from mass spectrometry (or other) experiments.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Mass spectrum analysis</oboInOwl:hasExactSynonym>
@@ -49434,10 +49851,11 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <edamontology:created_in>1.1</edamontology:created_in>
         <oboInOwl:hasDefinition>Identify peaks in a spectrum from a mass spectrometry, NMR, or some other spectrum-generating experiment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Peak assignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peak detection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Peak finding</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Peak detection</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peak detection</rdfs:label>
     </owl:Class>
     
 
@@ -50961,6 +51379,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         </rdfs:subClassOf>
         <edamontology:created_in>1.12</edamontology:created_in>
         <oboInOwl:hasDefinition>Re-adjust the output of mass spectrometry experiments with shifted ppm values.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass calibration</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Mass spectra calibration</rdfs:label>
@@ -50979,7 +51398,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
             </owl:Restriction>
         </rdfs:subClassOf>
         <edamontology:created_in>1.12</edamontology:created_in>
-        <oboInOwl:hasDefinition>Align multiple data sets using information from chromatography and/or peptide identification, from mass spectrometry experiments.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Align multiple data sets using information from chromatography, mass spectrometry and/or tandem mass spectrometry, from chromatography-mass spectrometry experiments.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MBR</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Match between runs</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Chromatographic alignment</rdfs:label>
@@ -51032,7 +51453,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3631 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3631">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_webprotege_007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
@@ -51762,7 +52183,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3767">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_webprotege_007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
@@ -51964,7 +52385,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3803 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3803">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_webprotege_007"/>
         <edamontology:created_in>1.17</edamontology:created_in>
         <oboInOwl:hasBroadSynonym>Metabolite identification</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Mass spectra identification of compounds that are produced by living systems. Including polyketides, terpenoids, phenylpropanoids, alkaloids and antibiotics.</oboInOwl:hasDefinition>
@@ -52927,6 +53348,163 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     
 
 
+    <!-- http://edamontology.org/operation_webprotege_004 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_004">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T09:53:40.096668Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removing or reducing the baseline of mass spectra</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baseline reduction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baseline removal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baseline estimation</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>Baseline subtraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_005 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_005">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T09:55:59.976989Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smoothing the signals / data points in mass spectra</oboInOwl:hasDefinition>
+        <rdfs:label>Mass spectra smoothing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_006 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_006">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T09:59:33.123405Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determination of the area under the curve (AUC) of each peak in a mass spectrum as a measure of the peak intensity</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peak area determination</oboInOwl:hasExactSynonym>
+        <rdfs:label>Peak integration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_007 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_007">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T10:01:41.718452Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification or annotation of molecules that are represented by the mass peaks of mass spectra</oboInOwl:hasDefinition>
+        <rdfs:label>Mass spectra identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_008 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_008">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_webprotege_007"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T10:02:11.822357Z</oboInOwl:creation_date>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolite annotation</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>Metabolite identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_009 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_009">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_webprotege_007"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T10:02:21.987638Z</oboInOwl:creation_date>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lipid annotation</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>Lipid identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_010 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_010">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T10:05:20.807419Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alignment of mass peaks across multiple mass spectra to remove slight mass variations between the mass spectra and make the mass peaks comparable between them</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass alignment</oboInOwl:hasExactSynonym>
+        <rdfs:label>Mass spectra alignment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_011 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_011">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3627"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T10:10:05.187397Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calibration of the mass axis by using mass peaks derived from known molecules that are either naturally present in the sample or were added during sample preparation to the sample.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass re-calibration</oboInOwl:hasExactSynonym>
+        <rdfs:label>Internal calibration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_012 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_012">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3627"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T10:10:12.898496Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calibration of the spectral mass axes by using mass peaks derived from known molecules that are not part of the sample</oboInOwl:hasDefinition>
+        <rdfs:label>External calibration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_013 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_013">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Composite format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_014 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_014">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCFoell</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-17T10:24:58.434204Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resampling the spectral mass axes by grouping mass values into bins with a certain width</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass binning</oboInOwl:hasExactSynonym>
+        <rdfs:label>Mass spectra binning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_015 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_015">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_webprotege_013"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imzML</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_webprotege_016 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_webprotege_016">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_webprotege_013"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyze7.5</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/topic_0003 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0003">
@@ -53102,6 +53680,18 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0084">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0091"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3299"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_webprotege_079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The study of evolutionary relationships amongst organisms.</oboInOwl:hasDefinition>
@@ -53220,15 +53810,16 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
-        <oboInOwl:hasBroadSynonym>Computer graphics</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer graphics - Separate? Or broader CGraphics &amp; visualisation?</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.2.5 Computer graphics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Rendering (drawing on a computer screen) or visualisation of molecular sequences, structures or other biomolecular data.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Data rendering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data rendering - TODO operation?</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Data_visualisation</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Data visualisation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_visualization"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scientific? and technical? visualisation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_and_information_visualization"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Scientific_visualization"/>
     </owl:Class>
     
 
@@ -53579,15 +54170,11 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0134 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0134">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_098"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
-        <edamontology:obsolete_since>1.13</edamontology:obsolete_since>
-        <edamontology:oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:hasDefinition>An analytical chemistry technique that measures the mass-to-charge ratio and abundance of ions in the gas phase.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_3520"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: See overlap with/distinction from CHMO, e.g. quadrupole time-of-flight mass spectrometry [CHMO:00027], or notably “laser ablation inductively coupled plasma time-of-flight mass spectrometry” or LA-ICP-TOFMS [CHMO:0000551] (Palmblad et al. 2022 says &quot;could just as well be annotated by connecting the individual terms “laser ablation” (CHMO:0001132), “plasma ionisation” (CHMO:0001665) and &quot;time-of-flight mass spectrometry&quot; (CHMO:0000580&quot;))</rdfs:comment>
         <rdfs:label>Mass spectrometry</rdfs:label>
-        <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
 
@@ -54241,8 +54828,14 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0194 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0194">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3293"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_webprotege_080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The integrated study of evolutionary relationships and whole genome data, for example, in the analysis of species trees, horizontal gene transfer and evolutionary reconstruction.</oboInOwl:hasDefinition>
@@ -54762,22 +55355,25 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDbXref>VT 1.3.99 Other</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study and practice of information processing and use of computer information systems.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>The theory and practical use of computer systems.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Information management</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Information science</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Knowledge management</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Computer_science</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasHumanReadableId>Informatics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Cloud computing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computational science</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Computer science</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>HPC</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>High performance computing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>High-performance computing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Information management</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Knowledge management</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scientific computing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Informatics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computer_science"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Informatics"/>
-        <skos:altLabel>Computer science</skos:altLabel>
     </owl:Class>
     
 
@@ -54840,7 +55436,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.15 Ecology</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>The ecological and environmental sciences and especially the application of information technology (ecoinformatics).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ecological and environmental sciences and especially the application of information technology (ecoinformatics). TODO: OMDG!</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Ecology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Computational ecology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Ecoinformatics</oboInOwl:hasNarrowSynonym>
@@ -55776,6 +56372,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
         <oboInOwl:hasDefinition>Pathogens, e.g. information on a specific vertebrate genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Consider Model organism?!?!?!? Infectious disease rather?</rdfs:comment>
         <rdfs:comment>The resource may be specific to a pathogen, a group of pathogens or all pathogens.</rdfs:comment>
         <rdfs:label>Pathogens</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -56845,6 +57442,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_2840">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3377"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.9 Toxicology</oboInOwl:hasDbXref>
@@ -57153,9 +57751,11 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3050 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3050">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
         <edamontology:created_in>beta13</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biodiversity science</edamontology:related_term>
         <oboInOwl:hasDbXref>VT 1.5.5 Biodiversity conservation</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The degree of variation of life forms within a given ecosystem, biome or an entire planet.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Biodiversity</oboInOwl:hasHumanReadableId>
@@ -57366,7 +57966,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3068 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3068">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_040"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
         <edamontology:created_in>beta13</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The scientific literature, language processing, reference information, and documentation.</oboInOwl:hasDefinition>
@@ -57826,8 +58426,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3174 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3174">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3697"/>
         <edamontology:created_in>1.1</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasBroadSynonym>Biome sequencing</oboInOwl:hasBroadSynonym>
@@ -58040,7 +58640,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3297 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3297">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_071"/>
         <edamontology:created_in>1.3</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The exploitation of biological process, structure and function for industrial purposes, for example the genetic manipulation of microorganisms for the antibody production.</oboInOwl:hasDefinition>
@@ -58174,7 +58775,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health and medicine</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human health and medicine</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Medicine"/>
     </owl:Class>
     
@@ -58257,6 +58858,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene expression a related term, or how?</rdfs:comment>
         <rdfs:label>Transcriptomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Transcriptomics_technologies"/>
     </owl:Class>
@@ -58268,6 +58870,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3314">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <edamontology:created_in>1.3</edamontology:created_in>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecules?</edamontology:related_term>
         <oboInOwl:hasBroadSynonym>Chemical science</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Polymer science</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>VT 1.7.10 Polymer science</oboInOwl:hasBroadSynonym>
@@ -58417,6 +59020,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3324">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0634"/>
         <edamontology:created_in>1.3</edamontology:created_in>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathogens</edamontology:related_term>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathogen-borne disease(s)?</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 3.3.4 Infectious diseases</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the prevention, diagnosis and management of transmissable disease with clinically evident illness resulting from infection with pathogenic biological agents (viruses, bacteria, fungi, protozoa, parasites and prions).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Communicable disease</oboInOwl:hasExactSynonym>
@@ -58425,7 +59030,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Infectious disease</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infectious diseases</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Infectious_disease_(medical_specialty)"/>
     </owl:Class>
     
@@ -58760,6 +59365,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3368">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_087"/>
         <edamontology:created_in>1.4</edamontology:created_in>
         <oboInOwl:hasDefinition>Any matter, surface or construct that interacts with a biological system.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Biomaterials</oboInOwl:hasHumanReadableId>
@@ -58828,6 +59434,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3372">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_071"/>
         <edamontology:created_in>1.4</edamontology:created_in>
         <oboInOwl:hasDbXref>1.2.12 Programming languages</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Software engineering</oboInOwl:hasDbXref>
@@ -58835,6 +59442,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDbXref>VT 1.2.14 Software engineering</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.2.7 Data structures</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The process that leads from an original formulation of a computing problem to executable programs.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q80993"/>
         <oboInOwl:hasExactSynonym>Computer programming</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Software development</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Software_engineering</oboInOwl:hasHumanReadableId>
@@ -58936,6 +59544,12 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3377">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3376"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_webprotege_076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <edamontology:created_in>1.4</edamontology:created_in>
         <oboInOwl:hasDefinition>The safety (or lack) of drugs and other medical interventions.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Patient safety</oboInOwl:hasExactSynonym>
@@ -59184,6 +59798,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3394">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3376"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_066"/>
         <edamontology:created_in>1.4</edamontology:created_in>
         <oboInOwl:hasDefinition>The protection of public health by controlling the safety and efficacy of products in areas including pharmaceuticals, veterinary medicine, medical devices, pesticides, agrochemicals, cosmetics, and complementary medicines.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Healthcare RA</oboInOwl:hasExactSynonym>
@@ -59218,6 +59833,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3396 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3396">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2259"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <edamontology:created_in>1.4</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
@@ -59489,13 +60105,17 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3410">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_018"/>
         <edamontology:created_in>1.4</edamontology:created_in>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex- and gender-sensitive biosciences</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>The study of the biological and physiological differences between males and females and how they effect differences in disease presentation and management.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Gender_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Gender medicine</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: ALSO IN TOXICOLOGY!!!! And elsewhere! And other than sex &amp; gender biases!!</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex and(/or) gender differences in health and medicine</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sex_differences_in_medicine"/>
     </owl:Class>
     
@@ -59579,7 +60199,9 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3415 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3415">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2840"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3377"/>
         <edamontology:created_in>1.4</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the diagnosis, management and prevention of poisoning and other adverse health effects caused by medications, occupational and environmental toxins, and biological agents.</oboInOwl:hasDefinition>
@@ -60645,13 +61267,14 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <edamontology:created_in>1.10</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
         <oboInOwl:hasDbXref>VT 3.4.5 Molecular diagnostics</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>An approach to medicine whereby decisions, practices and are tailored to the individual patient based on their predicted response or risk of disease.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An approach to medicine whereby decisions, practices and are tailored to the individual patient based on their predicted response or risk of disease. TODO: improve, make more realistic with Precision medicine (incl. probiotics). BUT: is it then anyway just a buzzword for all medicine which is with time becoming more precise?</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Precision medicine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Personalised_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Molecular diagnostics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Update</rdfs:comment>
         <rdfs:label>Personalised medicine</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Personalized_medicine"/>
     </owl:Class>
@@ -60785,6 +61408,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3697">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3050"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3301"/>
         <edamontology:created_in>1.13</edamontology:created_in>
         <edamontology:isdebtag>true</edamontology:isdebtag>
@@ -60843,6 +61467,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3810">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_088"/>
         <edamontology:created_in>1.20</edamontology:created_in>
         <oboInOwl:hasBroadSynonym>Agriculture</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Agroecology</oboInOwl:hasBroadSynonym>
@@ -60867,7 +61492,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Soil science</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Agricultural science</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agriculture/Agricultural science</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Agricultural_science"/>
     </owl:Class>
     
@@ -61018,6 +61643,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Mass cytometry</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOTE: Sub-concepts are maintained in EDAM BIoimaging https://webprotege.stanford.edu/#projects/2ce704bf-83ed-4d2e-985f-84c4841fac71/edit/Classes?selection=Class(%3Chttp://edamontology.org/topic_______Cytometry_%2528FIX_ID%2529%3E)</rdfs:comment>
         <rdfs:label>Cytometry</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cytometry"/>
     </owl:Class>
@@ -61061,6 +61687,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3941">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0203"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3308"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3697"/>
         <edamontology:created_in>1.24</edamontology:created_in>
         <oboInOwl:hasDefinition>The study of microbe gene expression within natural environments (i.e. the metatranscriptome).</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Metatranscriptomics</oboInOwl:hasHumanReadableId>
@@ -61284,6 +61911,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_4010">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <edamontology:created_in>1.26</edamontology:created_in>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open and reliable science</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open, reliable, transparent, and trustable science</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Open science encompasses the practices of making scientific research transparent and participatory, and its outputs publicly accessible.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -61336,6 +61965,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <edamontology:created_in>1.26</edamontology:created_in>
         <oboInOwl:hasDefinition>Microbial mechanisms for protecting microorganisms against antimicrobial agents.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>AMR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antibiotic resistance?</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Antifungal resistance</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Antiprotozoal resistance</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Antiviral resistance</oboInOwl:hasNarrowSynonym>
@@ -61347,7 +61977,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Total drug resistance (TDR)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Antimicrobial Resistance</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antimicrobial resistance</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Antimicrobial_resistance"/>
     </owl:Class>
     
@@ -61406,6 +62036,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_4019">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <edamontology:created_in>1.26</edamontology:created_in>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life</edamontology:related_term>
         <oboInOwl:hasDefinition>Biosciences, or life sciences, include fields of study related to life, living beings, and biomolecules.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Life sciences</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -61421,7 +62052,11 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_001">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_009"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earth</edamontology:related_term>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earth-like astronomical object?</edamontology:related_term>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terrestrial planet?</edamontology:related_term>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planetary sciences</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q8008"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earth sciences</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Having Geosciences also under Astronomy looks of course weird. However, how to connect Planetary sciences &amp; co.?</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia in some articles suggests that Geogpraphy = Earth sciences. That&apos;s nonsense, or isn&apos;t it?</rdfs:comment>
@@ -61450,7 +62085,34 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3305"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-29T16:49:44.827249Z</oboInOwl:creation_date>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global public health (exact?)</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Global health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_004 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_004">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-11T15:05:38.611478Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justice, equity, diversity, and inclusion (JEDI, J.E.D.I.)</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODOs: Think if separate DEI in STEM needed. Think if all underneath Ethics (incl. Justice). Think if we need another generic DIversity concept, including Cultural and Biodiversity, and DEI/JEDI.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diversity, equity, and inclusion</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Diversity,_equity,_and_inclusion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_005 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_005">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-11T15:15:36.25938Z</oboInOwl:creation_date>
+        <rdfs:label>Behavioural ecology</rdfs:label>
     </owl:Class>
     
 
@@ -61496,9 +62158,10 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_009">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Universe</edamontology:related_term>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astrosciences</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space sciences</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space sciences: https://en.wikipedia.org/wiki/Outline_of_space_science doesn&apos;t add much useful to Astronomy (pretty-much other than Rocket science🚀🤘🏽👾). However, https://en.wikipedia.org/wiki/Outline_of_academic_disciplines#Space_science has various topics as &quot;siblings&quot; of Astronomy (incl. Planetary science and Astrobiology).</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space sciences: https://en.wikipedia.org/wiki/Outline_of_space_science adds mostly &quot;Rocket science&quot;/Space flight engineering🚀. However, https://en.wikipedia.org/wiki/Outline_of_academic_disciplines#Space_science has various topics as &quot;siblings&quot; of Astronomy (incl. Planetary science and Astrobiology).</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telescopy as a separate topic under Imaging??? (Or synonym of Astronomy if that is limited to observation, and separated from Astrophysics etc.)</rdfs:comment>
         <rdfs:label>Astronomy</rdfs:label>
     </owl:Class>
@@ -61520,9 +62183,13 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_011">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_009"/>
+        <edamontology:related_term rdf:resource="https://www.wikidata.org/wiki/Q4213"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telescope</edamontology:related_term>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astronomical imaging?</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observational astronomy</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(Or synonym of Astronomy if that is limited to observation, and separated from Astrophysics etc.)</rdfs:comment>
         <rdfs:label>Telescopy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Telescope"/>
     </owl:Class>
     
 
@@ -61531,6 +62198,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_012">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_058"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-05T23:24:40.903469Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Satellite imagery</oboInOwl:hasExactSynonym>
@@ -61544,8 +62212,10 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_013">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_058"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-05T23:26:48.562139Z</oboInOwl:creation_date>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerial photography</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Aerial imaging</rdfs:label>
     </owl:Class>
     
@@ -61600,7 +62270,11 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_018">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justice</edamontology:related_term>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Law?</edamontology:related_term>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rights</edamontology:related_term>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+ ethics committees for research on humans, animal, ...? Accountability / bias / ethics of science itself? (also under Open science)  Bias &amp; ethics etc. in Machine learning(!) ...</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Under Culture &amp; humanities, or separate?</rdfs:comment>
         <rdfs:label>Ethics</rdfs:label>
     </owl:Class>
     
@@ -61633,8 +62307,10 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_021">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4010"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Registered report</edamontology:related_term>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-06T00:07:25.063142Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pre-registration</oboInOwl:hasExactSynonym>
         <rdfs:label>Preregistration</rdfs:label>
     </owl:Class>
     
@@ -61646,6 +62322,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4010"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-06T00:07:59.61663Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enthusiast science?</oboInOwl:hasExactSynonym>
         <rdfs:label>Citizen science</rdfs:label>
     </owl:Class>
     
@@ -61882,6 +62559,9 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-05T13:18:28.523052Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation to Humanities &amp; Anthropology?
+- https://en.wikipedia.org/wiki/Humanities
+- https://en.wikipedia.org/wiki/Anthropology</rdfs:comment>
         <rdfs:label>Social sciences</rdfs:label>
     </owl:Class>
     
@@ -61950,6 +62630,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_webprotege_046 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_046">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_001"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jeani</oboInOwl:created_by>
@@ -61966,6 +62647,921 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jeani</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-06T12:54:03.110536Z</oboInOwl:creation_date>
         <rdfs:label>Satellite remote sensing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_048 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_048">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-11T15:16:04.849326Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nature conservation! Or a separate concept? And/or a generic one incl. Cultural conservation etc.?</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conservation ecology?</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO add:
+ - types of effort/work towards conservation
+ - research related to conservation (relation to Biodiversity and sub-topics?)
+ - concepts related to endangered species, endangered/disturbed(!) ecosystems, and extinction
+ - major high-level concepts related to habitat and biotop disturbance (not types of habitat/biotop/environment)
+ - main kinds of threats: Invasive species, Soil/Animal/Ecosystem/.. health, Habitat loss, (Land use incl. Agriculture) + some concrete types, Environmental toxicology/Pollution incl. Pesticides etc., Genetic pollution?, Hunting/Fishing/Poaching, ...</rdfs:comment>
+        <rdfs:label>Conservation biology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_049 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_049">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3305"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T16:20:45.423453Z</oboInOwl:creation_date>
+        <rdfs:label>Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_050 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_050">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3305"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_001"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T16:21:27.687163Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One health (which one is more buzzword? May they mean something different?)</oboInOwl:hasExactSynonym>
+        <rdfs:label>Planetary health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_051 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_051">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T16:23:12.89382Z</oboInOwl:creation_date>
+        <rdfs:label>Occupational health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_052 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_052">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0121"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3697"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T16:24:28.216566Z</oboInOwl:creation_date>
+        <rdfs:label>Metaproteomics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_053 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_053">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0121"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T16:25:05.110211Z</oboInOwl:creation_date>
+        <rdfs:label>Adductomics?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_054 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_054">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T22:55:14.820834Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO; this is a list of vaguely related keywords that we may or may not want to include somewhere: Decolonisation, Global South, Minorities (incl. Ethnical/Tribal/...), Small island/remote nations, Intersectionality, ... PLEASE ADD MORE 😊</rdfs:comment>
+        <rdfs:label>Cultural diversity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_055 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_055">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4010"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T22:58:08.397996Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEI in STEM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diversity, equity, and inclusion in science, technology, engineering, and mathematics</oboInOwl:hasExactSynonym>
+        <rdfs:label>Diversity, equity, and inclusion in STEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_056 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_056">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_001"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_040"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-19T12:58:26.005642Z</oboInOwl:creation_date>
+        <rdfs:label>Social geography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_057 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_057">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_001"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-19T12:58:36.798832Z</oboInOwl:creation_date>
+        <rdfs:label>Physical geography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_058 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_058">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T00:37:01.346313Z</oboInOwl:creation_date>
+        <rdfs:label>Remote sensing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Remote_sensing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_059 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_059">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3050"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T00:40:08.798535Z</oboInOwl:creation_date>
+        <rdfs:label>Biodiversity informatics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_060 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_060">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T21:35:16.302722Z</oboInOwl:creation_date>
+        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q11042"/>
+        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q80083"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Culture and its products (both solutions &amp; problems) versus Cultural studies (=Humanities?, incl.?=? Anthropology?, e.g. Archaeology, Archaeoastronomy): Should they be distinguished, or mixed together? And what with the various sub-disciplines of Anthropology?</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In contrast to the nicely broad definition on English Wikipedia, WikiData definition of https://www.wikidata.org/wiki/Q11042 is narrower in English and many other languages, and non-existent or vague in others. Therefore skos:closeMatch might be the best (narrowMatch unnecessarily explicit?).</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It might be unnecessary to model the concept of Art/Arts between Culture (art is narrower) and Visual art(s) (art is broader)
+- https://en.wikipedia.org/wiki/Art, https://www.wikidata.org/wiki/Q735
+- https://en.wikipedia.org/wiki/The_arts, https://www.wikidata.org/wiki/Q2018526</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To avoid confussion, should probably be labelled Human culture, or Culture and humanities (or vice versa). The first, or maybe anyway just Culture, might result in a better-defined concept/term.
+General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or is more scientific than Humanities??</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Culture and humanities</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Culture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_061 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_061">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:01:34.260233Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q36649"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual art</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual arts</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Visual_arts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_062 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_062">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_061"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:03:37.588183Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q857780"/>
+        <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q10301381"/>
+        <rdfs:label>Scientific and technical illustration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Technical_illustration"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Illustration#Technical_and_scientific_illustration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_063 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_063">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_062"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:05:52.943542Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q17003225"/>
+        <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q3796486"/>
+        <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q6806548"/>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Botanical illustration</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Medical illustration</oboInOwl:hasNarrowSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological illustration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biological_illustration"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Botanical_illustration"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Medical_illustration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_064 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_064">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_062"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_065"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:37:14.612067Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q4785463"/>
+        <rdfs:label>Archaeological illustration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Archaeological_illustration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_065 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_065">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:47:15.951859Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q23498"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archeology</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note: WikiData (not Wikipedia) has an interesting generic concept of &quot;History, heritage, and archeology&quot; https://www.wikidata.org/wiki/Q113077601</rdfs:comment>
+        <rdfs:label>Archaeology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Archaeology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_066 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_066">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-11T22:40:55.004726Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maybe needs own upper level? And any relation to Ethics (philosophical/controversial)? See suggested terms in Ethics: more about rights and justice, possibly independent of actual politics and law, but related.</rdfs:comment>
+        <rdfs:label>Law and politics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Law"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_067 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_067">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-11T22:41:36.184646Z</oboInOwl:creation_date>
+        <rdfs:label>Philosophy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Philosophy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_068 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_068">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_061"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-11T22:45:55.356349Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q191163"/>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Landscape painting</oboInOwl:hasNarrowSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In most languages (not EN) and also to a major extent in the en.wikipedia, https://www.wikidata.org/wiki/Q191163 is limited to painting.</rdfs:comment>
+        <rdfs:label>Landscape art</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Landscape_painting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_069 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_069">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_011"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_061"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amateur astronomy (concept? then rather Citizen astronomy or Enthusiast or similiar)</edamontology:related_term>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-11T23:06:51.390271Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q280855"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rather label Astronomical imaging (aka in en.wikipedia), if that isn&apos;t a synonym of Telescopy = Observational astronomy.</rdfs:comment>
+        <rdfs:label>Astrophotography</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Amateur_astronomy"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Astrophotography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_070 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_070">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T12:45:48.016275Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q1026962"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computational humanities</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DH</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Humanities computing</oboInOwl:hasExactSynonym>
+        <rdfs:label>Digital humanities</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Digital_humanities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_071 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_071">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T13:21:56.944735Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q11023"/>
+        <rdfs:label>Engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Engineering"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/List_of_engineering_branches"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_072 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_072">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4010"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_071"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do-it-yourself (DIY) culture??</edamontology:related_term>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do-it-yourself (DIY) hardware</edamontology:related_term>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maker culture?</edamontology:related_term>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maker movement?</edamontology:related_term>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open design?</edamontology:related_term>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T13:23:15.737553Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q159172"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free and open-source hardware (FOSH)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OSH</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open hardware</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open source hardware</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open science hardware</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open-source electronics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open-source laboratory</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open-source robotics (OSR)</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open-source hardware</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open-source_hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_073 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_073">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T20:41:43.908927Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q295865"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecological goods and services</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecosystem goods</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nature&apos;s services</oboInOwl:hasExactSynonym>
+        <rdfs:label>Ecosystem services</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ecosystem_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_074 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_074">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_009"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T21:20:08.819819Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q11680018"/>
+        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q4117675"/>
+        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q911801"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic and molecular astrophysics?</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical cosmology?</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cosmochemistry?</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>Astrochemistry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Astrochemistry"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Atomic_and_molecular_astrophysics"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cosmochemistry"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/List_of_interstellar_and_circumstellar_molecules"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_075 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_075">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_066"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-20T14:14:20.385209Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Or &quot;law enforcement and investigation&quot;? Or is investigation just too generic, encomplassing possibly all research?</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Law and regulations enforcement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_076 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_076">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3394"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_075"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-20T14:15:11.268893Z</oboInOwl:creation_date>
+        <rdfs:label>Enforcement of biotechnological regulations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_077 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_077">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_075"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-20T14:15:50.944873Z</oboInOwl:creation_date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forensic biology/biosciences?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_078 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_078">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-21T07:45:20.770358Z</oboInOwl:creation_date>
+        <rdfs:label>History</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_079 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_079">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3050"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_001"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_078"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-21T07:45:30.537647Z</oboInOwl:creation_date>
+        <rdfs:label>Natural history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_080 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_080">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3050"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0194"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-22T18:51:15.568689Z</oboInOwl:creation_date>
+        <rdfs:label>Biodiversity genomics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_082 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_082">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2840"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental pollution</edamontology:related_term>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-26T13:16:05.814956Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecotoxicology?</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Pollution as a related term, or a separate concept?
+We might need to model some main kind of pollution, at least by:
+ - what part of the environment they pollute etc.: Air pollution, Water quality, Soil toxicology?, (Climate is there in some ways), ... 
+ - by main human activities causing them: Mining (incl. fuels, deep sea mining, ....), Transport(ation), (Agriculture already modelled enough, just add some main forms/principles...), Building/etc., Urbanisation, Waste management/Land fill/Sewage/etc., Industrial pollution (more concrete), Geothermal/Volcanic, Weather-related (incl. kinds of Extreme weather), ...
+ - maybe also main types of pollutants??
+NOTE: E.g. light pollution is not toxic.</rdfs:comment>
+        <rdfs:label>Environmental toxicology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_083 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_083">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2840"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-26T13:32:06.764521Z</oboInOwl:creation_date>
+        <rdfs:label>Nanotoxicology etc.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_084 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_084">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_020"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental racism</edamontology:related_term>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-26T13:34:48.860002Z</oboInOwl:creation_date>
+        <rdfs:label>Environmental justice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_085 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_085">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3377"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-26T13:48:55.552452Z</oboInOwl:creation_date>
+        <rdfs:label>Food safety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_086 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_086">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3377"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_webprotege_076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-26T13:49:28.376261Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GMOs</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetically modified microorganisms (GMMs)</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>Genetically modified organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_087 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_087">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_071"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-26T14:00:02.388686Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials science</oboInOwl:hasBroadSynonym>
+        <rdfs:label>Materials engineering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_088 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_088">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_057"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land cover</edamontology:related_term>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-26T14:07:23.053777Z</oboInOwl:creation_date>
+        <rdfs:label>Land use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_089 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_089">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3810"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_082"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-26T14:29:10.778852Z</oboInOwl:creation_date>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fungicides</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herbicides</oboInOwl:hasNarrowSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pesticides / Pest control</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_090 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_090">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-27T14:29:46.042475Z</oboInOwl:creation_date>
+        <rdfs:label>Popular culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_091 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_091">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_019"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-29T13:24:38.200415Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q5532888"/>
+        <rdfs:label>Genetic (non)discrimination?</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genetic_discrimination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_092 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_092">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T13:30:13.480471Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Under Biochem? And Neurosomething?</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurochemistry?</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neurochemistry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_093 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_093">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T13:32:54.600724Z</oboInOwl:creation_date>
+        <rdfs:label>Human-health side effects?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_094 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_094">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T13:33:56.765741Z</oboInOwl:creation_date>
+        <rdfs:label>Animal health etc.?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_095 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_095">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T13:34:39.857504Z</oboInOwl:creation_date>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soil health</oboInOwl:hasNarrowSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soil science?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_096 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_096">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T13:36:59.127117Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EIA</oboInOwl:hasExactSynonym>
+        <rdfs:label>Environmental impact assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_097 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_097">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T13:37:28.454898Z</oboInOwl:creation_date>
+        <rdfs:label>Enviromental health?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_098 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_098">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T13:41:58.839583Z</oboInOwl:creation_date>
+        <rdfs:label>Spectrometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_099 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_099">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T15:09:23.540065Z</oboInOwl:creation_date>
+        <rdfs:label>Mental health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_100 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_100">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-14T15:09:35.781397Z</oboInOwl:creation_date>
+        <rdfs:label>Psychology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_101 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_101">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3050"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_103"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-20T07:26:43.018443Z</oboInOwl:creation_date>
+        <rdfs:label>Symbiosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_102 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_102">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_073"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_103"/>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pollen vector</edamontology:related_term>
+        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pollinator</edamontology:related_term>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T11:24:08.697676Z</oboInOwl:creation_date>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biotic pollination</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoophily</oboInOwl:hasNarrowSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: Zoophilous/biotic pollination is a biological interaction, but other pollination is not</rdfs:comment>
+        <rdfs:label>Pollination</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pollination"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pollinator"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Zoophily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_103 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_103">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T11:24:26.93815Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biotic interactions</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecological interactions</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological interactions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_104 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_104">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3324"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_050"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-21T11:45:44.463577Z</oboInOwl:creation_date>
+        <rdfs:label>Zoonotic diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_105 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_105">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_018"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26T21:30:50.382542Z</oboInOwl:creation_date>
+        <rdfs:label>Indigenous rights</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_106 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_106">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_054"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_107"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26T21:40:14.829332Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TK</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ancestral knowledge</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First nations&apos; knowledge</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indigenous knowledge (IK)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Traditional cultural expressions (TCE)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local knowledge</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>Traditional knowledge</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Traditional_knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_107 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_107">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26T21:42:49.199096Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What about Cultural heritage (https://www.wikidata.org/wiki/Q210272) and Heritage studies (https://www.wikidata.org/wiki/Q25101906)? (+see also note in Archaeology)</rdfs:comment>
+        <rdfs:label>Cultural heritage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_108 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_108">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_040"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26T22:05:51.911968Z</oboInOwl:creation_date>
+        <rdfs:label>Economics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_109 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_109">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3324"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_103"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26T22:51:55.082974Z</oboInOwl:creation_date>
+        <rdfs:label>Host-pathogen interaction(s)?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_110 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_110">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_103"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26T22:59:34.394268Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-evolution</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coevolution?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_111 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_111">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_103"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26T23:52:12.173028Z</oboInOwl:creation_date>
+        <rdfs:label>Sociality?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_112 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_112">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-07T13:32:55.235164Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental surveillence?</oboInOwl:hasExactSynonym>
+        <rdfs:label>Environmental montoring?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_113 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_113">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_112"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-07T13:33:53.364278Z</oboInOwl:creation_date>
+        <rdfs:label>Wastewater surveillence?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_webprotege_114 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_webprotege_114">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_061"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_107"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-16T10:46:46.688631Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How specific do we want to be here?</rdfs:comment>
+        <rdfs:label>Painting restoration?</rdfs:label>
     </owl:Class>
     
 
