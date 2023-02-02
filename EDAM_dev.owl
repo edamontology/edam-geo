@@ -62750,6 +62750,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T22:58:08.397996Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diversity, equity, inclusion, justice, accessibility (DEIJA)</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justice, equity, diversity, inclusion (JEDI)</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEI in STEM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diversity, equity, and inclusion in science, technology, engineering, and mathematics</oboInOwl:hasExactSynonym>
         <rdfs:label>Diversity, equity, and inclusion in STEM</rdfs:label>
@@ -63562,6 +63564,70 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-16T10:46:46.688631Z</oboInOwl:creation_date>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How specific do we want to be here?</rdfs:comment>
         <rdfs:label>Painting restoration?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_wp_geo_temporary_001 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_001">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_071"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-02T14:06:24.998675Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q43035"/>
+        <rdfs:label>Electrical engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electrical_engineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_wp_geo_temporary_002 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_002">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_071"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-02T14:15:09.276759Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q101333"/>
+        <rdfs:label>Mechanical engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mechanical_engineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_wp_geo_temporary_003 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_003">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_087"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_wp_geo_temporary_001"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_wp_geo_temporary_002"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-02T14:16:19.216887Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q3353193"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy systems engineering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q1803786"/>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical energy engineering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical power engineering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power engineering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power systems engineering</oboInOwl:hasNarrowSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: While this is mostly dealing with electrical energy, https://en.wikipedia.org/wiki/Energy_development (syn. Energy technology) and https://en.wikipedia.org/wiki/Outline_of_energy_development do also include thermal/combustive energy w/o electricity.</rdfs:comment>
+        <rdfs:label>Energy engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Energy_engineering"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Power_engineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_wp_geo_temporary_004 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_004">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_wp_geo_temporary_003"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-02T14:25:12.552808Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q19597073"/>
+        <rdfs:label xml:lang="de">Energieinformatik</rdfs:label>
+        <rdfs:label>Energy informatics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Energy_informatics"/>
     </owl:Class>
     
 
